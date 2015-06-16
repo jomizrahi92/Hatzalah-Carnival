@@ -34,7 +34,7 @@
     <!-- Document Title
     ============================================= -->
 	<title>Hatzalah Carnival Of The Jersey Shore</title>
-
+	<meta name="description" content="Hatzalah Carnival Of The Jersey Shore.">
 </head>
 
 <body class="stretched">
@@ -67,8 +67,8 @@
 						<ul>
 							<li class="current"><a href="index.html"><div>Home</div></a></li>
 							<li><a href="about.html"><div>About</div></a></li>
-							<li><a href="donate.html"><div>Donate</div></a></li>
-							<li><a href="donate.html"><div>Photos</div></a></li>
+							<li><a href="preorder.html"><div>Preorder</div></a></li>
+							<li><a href="photos.html"><div>Photos</div></a></li>
 							<li><a href="home/HatzalahCarnival2015Brochure.pdf"><div>Brochure</div></a></li>
 							<li><a href="home/JScarnivalflyer_15.pdf"><div>Flyer</div></a></li>
 							<li><a href="contact.html"><div>Contact</div></a></li>
@@ -318,59 +318,7 @@
                     </div>
                 </div>
 
-                <div class="parallax bottommargin-lg light" style="padding: 60px 0; background-image: url('images/parallax/calendar.jpg'); background-repeat: repeat-y; height: auto;" data-stellar-background-ratio="0.3">
-
-                    <div class="container clearfix">
-
-                        <div class="events-calendar">
-                            <div class="events-calendar-header clearfix">
-                                <h2>Events Calendar</h2>
-                                <h3 class="calendar-month-year">
-                                    <span id="calendar-month" class="calendar-month"></span>
-                                    <span id="calendar-year" class="calendar-year"></span>
-                                    <nav>
-                                        <span id="calendar-prev" class="calendar-prev"><i class="icon-chevron-left"></i></span>
-                                        <span id="calendar-next" class="calendar-next"><i class="icon-chevron-right"></i></span>
-                                        <span id="calendar-current" class="calendar-current" title="Got to current date"><i class="icon-reload"></i></span>
-                                    </nav>
-                                </h3>
-                            </div>
-                            <div id="calendar" class="fc-calendar-container"></div>
-                        </div>
-
-                        <script type="text/javascript">
-
-                            var cal = $( '#calendar' ).calendario( {
-                                    onDayClick : function( $el, $contentEl, dateProperties ) {
-
-                                        for( var key in dateProperties ) {
-                                            console.log( key + ' = ' + dateProperties[ key ] );
-                                        }
-
-                                    },
-                                    caldata : canvasEvents
-                                } ),
-                                $month = $( '#calendar-month' ).html( cal.getMonthName() ),
-                                $year = $( '#calendar-year' ).html( cal.getYear() );
-
-                            $( '#calendar-next' ).on( 'click', function() {
-                                cal.gotoNextMonth( updateMonthYear );
-                            } );
-                            $( '#calendar-prev' ).on( 'click', function() {
-                                cal.gotoPreviousMonth( updateMonthYear );
-                            } );
-                            $( '#calendar-current' ).on( 'click', function() {
-                                cal.gotoNow( updateMonthYear );
-                            } );
-
-                            function updateMonthYear() {
-                                $month.html( cal.getMonthName() );
-                                $year.html( cal.getYear() );
-                            }
-
-                        </script>
-
-                    </div>
+                <div class="parallax bottommargin-lg light" style="padding: 60px 0; background-image: url('images/home/image1.png'); background-repeat: repeat-y; height: 500px;" data-stellar-background-ratio="0.3">
 
                 </div>
 
@@ -675,7 +623,7 @@
 						</div>
 
 						<div class="clear"></div>
-
+						<i class="icon-envelope2"></i> hatzalahcarnival@gmail.com<br>
 						<i class="icon-headphones"></i>Non-Emergency Line: 732-531-4322
 						<div style="color:red;font-weight:bold;"><i class="icon-headphones"></i><strong>Emergency Number:</strong></abbr> 732-531-9988</div>
 
