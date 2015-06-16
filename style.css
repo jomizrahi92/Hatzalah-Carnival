@@ -12927,3 +12927,10 @@ body:not(.no-transition) #wrapper,
 	padding:0!important
 }
 
+/*Mine*/
+.download {
+	font-weight: bold;
+	font-size: 36px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
