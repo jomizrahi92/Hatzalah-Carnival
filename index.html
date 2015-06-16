@@ -70,7 +70,7 @@
 							<li><a href="preorder.html"><div>Preorder</div></a></li>
 							<li><a href="donate.html"><div>Donate</div></a></li>
 							<li><a href="photos.html"><div>Photos</div></a></li>
-							<li><a href="images/home/JScarnivalflyer_15.pdf"><div>Flyer</div></a></li>
+							<li><a href="images/home/HatzalahCarnival2015Brochure.pdf"><div>Brochure</div></a></li>
 							<li><a href="signup.html"><div>Volunteer Signup</div></a></li>
 							<li><a href="contact.html"><div>Contact</div></a></li>
 						</ul>
@@ -233,54 +233,12 @@
                     <div class="divider divider-short divider-center"><i class="icon-circle-blank"></i></div>
 
                     <div class="heading-block center">
-                        <h2>Borschure</h2>
+                        <h2>Flyer</h2>
                         <img src="images/home/image1.png" alt="John Doe"><br>
-						<div class="download"><a href="images/home/HatzalahCarnival2015Brochure.pdf">Download Broschure</a></div>
+						<div class="download"><a href="images/home/JScarnivalflyer_15.pdf">Download Flyer</a></div>
                     </div>
 
                     <div class="clear"></div>
-
-                </div>
-
-                <div class="section nobottommargin">
-                    <div class="container clearfix">
-
-                        <div class="heading-block center">
-                            <h3>Receive <span>regular</span> Event Updates</h3>
-                        </div>
-
-                        <div id="widget-subscribe-form2-result" data-notify-type="success" data-notify-msg=""></div>
-                        <form id="widget-subscribe-form2" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
-                            <div class="input-group input-group-lg divcenter" style="max-width:600px;">
-                                <span class="input-group-addon"><i class="icon-email2"></i></span>
-                                <input type="email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit">Subscribe Now</button>
-                                </span>
-                            </div>
-                        </form>
-
-                        <script>
-                            $("#widget-subscribe-form2").validate({
-                                submitHandler: function(form) {
-                                    $(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
-                                    $(form).ajaxSubmit({
-                                        target: '#widget-subscribe-form2-result',
-                                        success: function() {
-                                            $(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
-                                            $('#widget-subscribe-form2').find('.form-control').val('');
-                                            $('#widget-subscribe-form2-result').attr('data-notify-msg', $('#widget-subscribe-form2-result').html()).html('');
-                                            SEMICOLON.widget.notifications($('#widget-subscribe-form2-result'));
-                                        }
-                                    });
-                                }
-                            });
-                        </script>
-
-                    </div>
-                </div>
-
-                <div class="parallax bottommargin-lg light" style="padding: 60px 0; background-image: url('images/home/image1.png'); background-repeat: repeat-y; height: 500px;" data-stellar-background-ratio="0.3">
 
                 </div>
 
