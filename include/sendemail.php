@@ -23,7 +23,7 @@ if( isset( $_POST['template-contactform-submit'] ) AND $_POST['template-contactf
 
         if( $botcheck == '' ) {
 
-            $mail->SetFrom( $email , $name );
+            $mail->SetFrom( 'hatzalahcarnival@gmail.com' , $name );
             $mail->AddReplyTo( $email , $name );
             $mail->AddAddress( $toemail , $toname );
             $mail->Subject = $subject;
