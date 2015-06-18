@@ -23,15 +23,6 @@
     	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
 
-    <!-- External JavaScripts
-    ============================================= -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/jquery.calendario.js"></script>
-    <script type="text/javascript" src="js/events-data.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="js/jquery.gmap.js"></script>
-
     <!-- Document Title
     ============================================= -->
 	<title>Jersey Shore Hatzalah Carnival</title>
@@ -93,13 +84,6 @@
                 </div>
 
                 <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin" style="max-width:700px;"></div>
-
-                <script>
-                    jQuery(document).ready( function($){
-                        var newDate = new Date(2015, 7, 02, 11, 00);
-                        $('#countdown-ex1').countdown({until: newDate});
-                    });
-                </script>
 
                 <div class="center topmargin-lg">
 
@@ -247,41 +231,9 @@
 
                 	<div class="heading-block center">
 						<h2>Event Location</h2>
-						<h3>100 Grant Ave # 1, Deal, NJ 07723</h3>
+						<h3>100 Grant Ave., Deal, NJ 07723</h3>
 						<h4>11:00am - 6:00pm</h4>
                         <div id="google-map4" style="height: 300px;" class="gmap bottommargin"></div>
-
-                        <script type="text/javascript">
-
-                            $('#google-map4').gMap({
-
-								 address: '100 Grant Ave., Deal, NJ 07723',
-                                 maptype: 'ROADMAP',
-                                 zoom: 14,
-                                 markers: [
-										{
-											address: "100 Grant Ave # 1, Deal, NJ 07723",
-											html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;"><span>Hatzalah Carnival</span>!</h4><p class="nobottommargin">Our Event will be held here!</p></div>',
-											icon: {
-												image: "images/icons/map-icon-red.png",
-												iconsize: [32, 39],
-												iconanchor: [13,39]
-											}
-										}
-                                 ],
-                                 doubleclickzoom: false,
-                                 controls: {
-                                     panControl: true,
-                                     zoomControl: true,
-                                     mapTypeControl: true,
-                                     scaleControl: false,
-                                     streetViewControl: false,
-                                     overviewMapControl: false
-                                 }
-
-                            });
-
-                        </script>
 
                         <div class="fancy-title title-border">
                             <h4>Gallery</h4>
@@ -320,32 +272,6 @@
                         <div class="oc-item"><a href="images/gallery/22.jpg"><img src="images/gallery/22.jpg" alt="Clients"></a></div>
 
                     </div>
-
-                    <script type="text/javascript">
-
-                        jQuery(document).ready(function($) {
-
-                            var ocClients = $("#oc-clients-full");
-
-                            ocClients.owlCarousel({
-                                margin: 30,
-                                loop: true,
-                                nav: false,
-                                autoplay: true,
-                                dots: false,
-                                autoplayHoverPause: true,
-                                responsive:{
-                                    0:{ items:2 },
-                                    480:{ items:3 },
-                                    768:{ items:4 },
-                                    992:{ items:5 },
-                                    1200:{ items:6 }
-                                }
-                            });
-
-                        });
-
-                    </script>
 
                 </div>
 
@@ -438,6 +364,15 @@
     <!-- Go To Top
     ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
+	
+	<!-- External JavaScripts
+    ============================================= -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/jquery.calendario.js"></script>
+    <script type="text/javascript" src="js/events-data.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/jquery.gmap.js"></script>
 
     <!-- Footer Scripts
     ============================================= -->
@@ -451,6 +386,67 @@
 	  ga('create', 'UA-64271706-1', 'auto');
 	  ga('send', 'pageview');
 	</script>
+	<script>
+		jQuery(document).ready( function($){
+			var newDate = new Date(2015, 7, 02, 11, 00);
+			$('#countdown-ex1').countdown({until: newDate});
+		});
+	</script>
+	<script type="text/javascript">
 
+	$('#google-map4').gMap({
+
+		 address: '100 Grant Ave., Deal, NJ 07723',
+		 maptype: 'ROADMAP',
+		 zoom: 14,
+		 markers: [
+				{
+					address: "100 Grant Ave # 1, Deal, NJ 07723",
+					html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;"><span>Hatzalah Carnival</span>!</h4><p class="nobottommargin">Our Event will be held here!</p></div>',
+					icon: {
+						image: "images/icons/map-icon-red.png",
+						iconsize: [32, 39],
+						iconanchor: [13,39]
+					}
+				}
+		 ],
+		 doubleclickzoom: false,
+		 controls: {
+			 panControl: true,
+			 zoomControl: true,
+			 mapTypeControl: true,
+			 scaleControl: false,
+			 streetViewControl: false,
+			 overviewMapControl: false
+		 }
+
+	});
+
+</script>
+	<script type="text/javascript">
+
+	jQuery(document).ready(function($) {
+
+		var ocClients = $("#oc-clients-full");
+
+		ocClients.owlCarousel({
+			margin: 30,
+			loop: true,
+			nav: false,
+			autoplay: true,
+			dots: false,
+			autoplayHoverPause: true,
+			responsive:{
+				0:{ items:2 },
+				480:{ items:3 },
+				768:{ items:4 },
+				992:{ items:5 },
+				1200:{ items:6 }
+			}
+		});
+
+	});
+
+</script>
 </body>
 </html>
