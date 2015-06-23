@@ -12991,3 +12991,8 @@ body:not(.no-transition) #wrapper,
    border: none;
 	content: none;
 }
+
+.removeborder:after {
+   border: none;
+	content: none;
+}
