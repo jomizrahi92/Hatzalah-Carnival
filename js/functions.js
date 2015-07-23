@@ -502,8 +502,8 @@ var SEMICOLON = SEMICOLON || {};
 
 				if( !animationIn ) { animationIn = 'fadeIn'; }
 				if( !animationOut ) { animationOut = 'fadeOut'; }
-				if( !durationIn ) { durationIn = 50; }
-				if( !durationOut ) { durationOut = 50; }
+				if( !durationIn ) { durationIn = 1500; }
+				if( !durationOut ) { durationOut = 800; }
 
 				if( loaderColor ) {
 					if( loaderColor == 'theme' ) {
@@ -2352,7 +2352,7 @@ var SEMICOLON = SEMICOLON || {};
 
 	var $window = $(window),
 		$body = $('body'),
-		$wrapper = $('#wrapper'),
+		//$wrapper = $('#wrapper'),
 		$header = $('#header'),
 		$headerWrap = $('#header-wrap'),
 		$footer = $('#footer'),
