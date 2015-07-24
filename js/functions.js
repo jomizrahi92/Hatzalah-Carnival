@@ -2352,7 +2352,7 @@ var SEMICOLON = SEMICOLON || {};
 
 	var $window = $(window),
 		$body = $('body'),
-		//$wrapper = $('#wrapper'),
+		$wrapper = $('#wrapper'),
 		$header = $('#header'),
 		$headerWrap = $('#header-wrap'),
 		$footer = $('#footer'),
