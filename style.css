@@ -3197,6 +3197,12 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 /* Page Title - Parallax Background
 -----------------------------------------------------------------*/
 
+#page-title.page-title-parallax {
+	padding: 100px 0;
+	text-shadow: none;
+	border-bottom: none;
+}
+
 #page-title.page-title-parallax.committee {
 	padding: 125px 0;
 	display: block;
@@ -3208,8 +3214,8 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	 -moz-background-size: cover;
 	   -o-background-size: cover;
 	      background-size: cover;
-	text-shadow: none;
 	border-bottom: none;
+	text-shadow: 3px 3px 10px black !important;
 }
 
 @media (max-width: 1215px) {
