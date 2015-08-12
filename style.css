@@ -3212,10 +3212,20 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	border-bottom: none;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1215px) {
+	#page-title.page-title-parallax.committee {
+  		padding: 140px 0;
+	}
+}
+@media (max-width: 990px) {
 	#page-title.page-title-parallax.committee {
   		padding: 40% 0;
   		height: 550px;
+	}
+}
+@media (max-width: 767px) {
+	#page-title.page-title-parallax.committee h1 {
+		font-size: 20px;
 	}
 }
 @media (max-width: 678px) {
@@ -3223,10 +3233,8 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
   		padding: 40% 0;
   		height: 300px;
 	}
-	#page-title.page-title-parallax.committee h1 {
-		font-size: 20px;
-	}
 }
+
 #page-title.page-title-parallax h1 {
 	font-size: 40px;
 	font-weight: 600;
