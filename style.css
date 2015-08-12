@@ -853,6 +853,10 @@ html[xmlns] .slider-wrap {display: block;}
 	top: -100px;
 	margin-bottom: -100px;
 }
+#header.transparent-header + #page-title.page-title-parallax, #slider + #header.transparent-header {
+	top: 0;
+	margin-bottom: 0;
+}
 
 #header.transparent-header.floating-header + #slider,
 #header.transparent-header.floating-header + #google-map {
@@ -3195,10 +3199,34 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 #page-title.page-title-parallax {
 	padding: 100px 0;
+	display: block;
+	height: 725px;
+	background-color: #FFF;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	 -moz-background-size: cover;
+	   -o-background-size: cover;
+	      background-size: cover;
 	text-shadow: none;
 	border-bottom: none;
 }
 
+@media (max-width: 900px) {
+	#page-title.page-title-parallax.committee {
+  		padding: 40% 0;
+  		height: 550px;
+	}
+}
+@media (max-width: 678px) {
+	#page-title.page-title-parallax.committee {
+  		padding: 40% 0;
+  		height: 300px;
+	}
+	#page-title.page-title-parallax.committee h1 {
+		font-size: 20px;
+	}
+}
 #page-title.page-title-parallax h1 {
 	font-size: 40px;
 	font-weight: 600;
@@ -3215,6 +3243,10 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	background-attachment: fixed;
 	background-position: 50% 0;
 	background-repeat: no-repeat;
+}
+#page-title.page-title-parallax.committee {
+	background-attachment: initial;
+    background-position: center center;
 }
 
 
