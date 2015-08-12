@@ -3197,8 +3197,8 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 /* Page Title - Parallax Background
 -----------------------------------------------------------------*/
 
-#page-title.page-title-parallax {
-	padding: 100px 0;
+#page-title.page-title-parallax.committee {
+	padding: 125px 0;
 	display: block;
 	height: 725px;
 	background-color: #FFF;
@@ -3222,6 +3222,9 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
   		padding: 40% 0;
   		height: 550px;
 	}
+	#header.transparent-header + #page-title.page-title-parallax.committee .container {
+		padding-top: 10px;
+	}
 }
 @media (max-width: 767px) {
 	#page-title.page-title-parallax.committee h1 {
@@ -3232,6 +3235,9 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	#page-title.page-title-parallax.committee {
   		padding: 40% 0;
   		height: 300px;
+	}
+	#header.transparent-header + #page-title.page-title-parallax.committee .container {
+		padding-top: 5px;
 	}
 }
 
